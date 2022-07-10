@@ -27,9 +27,9 @@ There are 4 Endpoints associated to this project.
   This endpoint is used to add an amount of a certain coin. 
   
   It has two parameters: 
-  1) CoinID 
+  A) CoinID 
     This is used to identify what coin is being inserted, the viable id's can be found from the <b>Get-accepted-coins</b> end point
-  2) Amount. 
+  B) Amount. 
   The amount refers to the amount of the coin you want to insert. 
   
 4) reset
