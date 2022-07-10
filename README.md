@@ -17,22 +17,22 @@ Steps to run the project
 
 There are 4 Endpoints associated to this project.
 
-1) get-total-amount
+1) get-total-amount<br>
   This endpoint is to view the current amount of money that is in the piggy bank.
 
-2) Get-accepted-coin-types
+2) Get-accepted-coin-types<br>
  This is purely a endpoint for convenience, this endpoint retreives a list of coins that can be inserted and their ID which is used for the add-coins calls.
  
-3) Add coins
+3) Add coins<br>
   This endpoint is used to add an amount of a certain coin. 
   
-  It has two parameters: 
-  A) CoinID 
+  It has two parameters: <br>
+  A) CoinID<br>
     This is used to identify what coin is being inserted, the viable id's can be found from the <b>Get-accepted-coins</b> end point
-  B) Amount. 
+  B) Amount.<br>
   The amount refers to the amount of the selected coin you want to insert. 
   
-4) reset
+4) reset<br>
 This endpoint resets the piggy bank.  
    
 
