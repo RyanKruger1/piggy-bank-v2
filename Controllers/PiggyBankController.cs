@@ -63,13 +63,17 @@ namespace piggy_bank_v2.Controllers
                     currentBalanceDollars = repo.GetTotalAmount()
                 });
             }
-            catch (ArgumentOutOfRangeException ex)
+            catch (ArgumentOutOfRangeException)
             {
-                return NotFound();
+                return NotFound(new ErrorMessageDto{
+                    errorMessage = "coinId: " + coinId +" does not exist."
+                });
             }
-            catch (IndexOutOfRangeException ex)
+            catch (IndexOutOfRangeException)
             {
-                return NotFound();
+                return NotFound(new ErrorMessageDto{
+                    errorMessage = "coinId: " + coinId +" does not exist."
+                });
             }
         }
 
